@@ -55,7 +55,7 @@ $('.btn--hold').on('click', function () {
     score[activePlayer] += currentValue;
     $(`#score--${activePlayer}`).text(score[activePlayer]);
 
-    if (score[activePlayer] >= 20) {
+    if (score[activePlayer] >= 100) {
       status = false;
       $(`.player--${activePlayer}`).addClass('player--winner');
       $(`.player--${activePlayer}`).removeClass('player--active');
